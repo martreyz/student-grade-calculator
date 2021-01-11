@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./stylesheets/main.css" />
+
+    <title>Student's Grade Calculator</title>
+  </head>
+  <body>
+    <header class="jumbotron jumbotron-fluid">
+      <h1 class="display-2 text-center">Calculate your grades</h1>
+    </header>
+    <main class="container">
+      <div class="row">
+        <section class="col-4 section-resume">
+          <p class="py-3 my-2 percentageP">Your percentage is:</p>
+          <p class="py-3 my-2 gradeP">Your grade is:</p>
+        </section>
+        <section class="col-8 section-inputs py-4">
+          <h2 class="display-4 text-white">Enter your marks</h2>
+          <form>
+            <input
+              class="col-12 input py-2 my-3 maths"
+              type="number"
+              placeholder="Maths"
+            />
+            <input
+              class="col-12 input py-2 my-3 physics"
+              type="number"
+              placeholder="Physics"
+            />
+            <input
+              class="col-12 input py-2 my-3 chemistry"
+              type="number"
+              placeholder="Chemistry"
+            />
+            <input
+              class="col-12 input py-2 my-3 english"
+              type="number"
+              placeholder="English"
+            />
+            <input class="col-12 button" type="button" value="Submit" />
+          </form>
+        </section>
+        <section class="col-12 section-result resultMessage py-2 h3">
+          Congratulations! You passed!
+        </section>
+      </div>
+    </main>
+  </body>
+  <script src="./js/main.js"></script>
+</html>
